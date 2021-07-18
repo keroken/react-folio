@@ -1,6 +1,6 @@
 import React from 'react'
 import { GlobalStyle } from './GlobalStyle'
-import { Root, Routes, addPrefetchExcludes } from 'react-static'
+import { Head, Root, Routes, addPrefetchExcludes } from 'react-static'
 import { Link, Router } from '@reach/router'
 import { ParticlesBG } from 'components/ParticlesBG'
 import FancyDiv from 'components/FancyDiv'
@@ -13,6 +13,9 @@ addPrefetchExcludes(['dynamic'])
 function App() {
   return (
     <StyledRoot>
+      <Head>
+        <title>KENICHI SHINAGAWA | Web Designer & Developer</title>
+      </Head>
       <ParticlesBG />
       <GlobalStyle />
       <Nav>
