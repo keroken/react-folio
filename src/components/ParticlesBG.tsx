@@ -4,7 +4,9 @@ import styled from 'styled-components'
 
 export const ParticlesBG: React.FC = () => {
   return (
-    <StyledParticles
+    <>
+      <StyledCoverBG />
+      <StyledParticles
         width="100vw"
         height="100vh"
         params={{
@@ -117,6 +119,7 @@ export const ParticlesBG: React.FC = () => {
           "retina_detect": true,
         }}
       />
+    </>
   )
 }
 
@@ -127,5 +130,14 @@ const StyledParticles = styled(Particles)`
   top: 0;
   background: #151515 url('../images/morning-sky.jpg') no-repeat fixed left bottom;
   background-size: cover;
+  z-index: -10;
+`;
+
+const StyledCoverBG = styled.div`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: rgba(21, 21, 21, 0.2);
   z-index: -1;
 `;
