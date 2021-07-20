@@ -5,20 +5,15 @@ export const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-  Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-family: 'Lato', "Hiragino Kaku Gothic ProN",  Meiryo, sans-serif;
   font-weight: 300;
   font-size: 16px;
+  text-align: center;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
-a {
-  text-decoration: none;
-  color: #108db8;
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 `
