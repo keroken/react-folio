@@ -121,9 +121,11 @@ export const ParticlesBG: React.FC = () => {
 }
 
 const StyledParticles = styled(Particles)`
-  position: absolute;
-  background-image: url('images/morning-sky.jpg');
-  background-repeat: no-repeat;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #151515 url('../images/morning-sky.jpg') no-repeat fixed left bottom;
   background-size: cover;
   z-index: -1;
 `;
