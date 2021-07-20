@@ -2,6 +2,7 @@ import React from 'react'
 import { GlobalStyle } from './GlobalStyle'
 import { Head, Root, Routes, addPrefetchExcludes } from 'react-static'
 import { Link, Router } from '@reach/router'
+import { Nav } from 'components//Nav'
 import { ParticlesBG } from 'components/ParticlesBG'
 import Dynamic from 'containers/Dynamic'
 import styled from 'styled-components'
@@ -38,15 +39,5 @@ function App() {
 const StyledRoot = styled(Root)`
   position: relative;
 `;
-
-const Nav = styled.nav`
-  width: 100%;
-  background: transparent;
-  & a {
-    color: white;
-    padding: 1rem;
-    display: inline-block;
-  }
-`
 
 export default App
