@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Lato', "Hiragino Kaku Gothic ProN",  Meiryo, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 62.5%;
   text-align: center;
   color: #fff;
   margin: 0;
