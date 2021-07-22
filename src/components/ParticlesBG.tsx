@@ -5,6 +5,7 @@ import styled from 'styled-components'
 export const ParticlesBG: React.FC = () => {
   return (
     <>
+      <StyledPhotoBG />
       <StyledCoverBG />
       <StyledParticles
         width="100vw"
@@ -128,9 +129,7 @@ const StyledParticles = styled(Particles)`
   width: 100vw;
   height: 100vh;
   top: 0;
-  background: #151515 url('../images/morning-sky.jpg') no-repeat fixed left bottom;
-  background-size: cover;
-  z-index: -10;
+  z-index: -1;
 `;
 
 const StyledCoverBG = styled.div`
@@ -139,5 +138,15 @@ const StyledCoverBG = styled.div`
   height: 100vh;
   top: 0;
   background: rgba(21, 21, 21, 0.2);
-  z-index: -1;
+  z-index: -5;
+`;
+
+const StyledPhotoBG = styled.div`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #151515 url('../images/morning-sky.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  z-index: -10;
 `;
